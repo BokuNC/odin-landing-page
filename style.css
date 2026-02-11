@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.top {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header a {
+    text-decoration: none;
+    /*color: white;*/
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+
+}
+
+.hero {
+
+}
+
+.hero button {
+    background-color: #3882f6;
+}
+
+.subtext {
+
+}
+
+.img-container {
+
+}
+
+.content {
+
+}
+
+.first {
+
+}
+
+.second {
+
+}
+
+.third {
+
+}
+
+.bluebox {
+
+}
+
+.footer {
+
+}
