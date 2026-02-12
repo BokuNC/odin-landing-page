@@ -1,11 +1,12 @@
 body {
-    --bright-background: #ffffff;
-    --med-background: #e5e7eb;
+    --bright-background: #e9e7ff;
+    --med-background: #566b95;
     --dark-background: #1f2937;
     --main-text: #f9faf8;
     --sec-text: #e5e7eb;
     --button: #3882f6;
     --text: #1f2937;
+    --max-width: 90rem;
 }
 
 body {
@@ -17,8 +18,18 @@ body {
     display: flex;
     flex-flow: column nowrap;
     background-color: #1f2937;
-    justify-content: space-around;
-    padding: 0px 200px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 900px;
+    max-width: var(--max-width);
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    margin: 0;
 }
 
 .header {
@@ -50,6 +61,7 @@ body {
 .hero {
     display: flex;
     flex: 1;
+    align-self: center;
     flex-flow: row;
     justify-content: center;
     padding: 32px 0px;
@@ -84,7 +96,7 @@ body {
 
 .img-container {
     flex: 1;
-    width: 350px;
+    height: 250px;
     background-color: #8cb4ed86;
 }
 
@@ -96,25 +108,62 @@ body {
 }
 
 .content {
-
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .first {
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    text-align: center;
+    background-color: var(--bright-background);
+}
 
+.card-container {
+    flex: 1;
+    display: flex;
+}
+
+.card {
+    flex: 1;
+    width: 250px;
+    max-width: 280px;
+    text-align: center;
+    border: var(--button) solid;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 8px;
+}
+
+.card p {
+    flex: 1;
+    width: inherit;
 }
 
 .second {
-
+    background-color: var(--med-background);
 }
 
 .third {
-
+    background-color: var(--bright-background);
 }
 
 .bluebox {
-
+    background-color: var(--button)
 }
 
 .footer {
+    flex: 1;
+    color: var(--main-text);
+    background-color: var(--dark-background);
+    text-align: center;
+}
 
+.footer p {
+    margin: 0;
+    padding: 12px;
 }
