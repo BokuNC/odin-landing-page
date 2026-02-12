@@ -14,13 +14,16 @@ body {
     margin: 0px;
 }
 
-.top {
+.top, .first, .second, .third {
     display: flex;
     flex-flow: column nowrap;
-    background-color: #1f2937;
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.top {
+    background-color: #1f2937;
 }
 
 .cont-wrap {
@@ -81,7 +84,7 @@ body {
     margin: 0px;
 }
 
-.hero button {
+.hero button, .bluebox button {
     background-color: #3882f6;
     color: white;
     font-size: 18px;
@@ -112,12 +115,15 @@ body {
     flex-flow: column nowrap;
 }
 
-.first {
+
+.first, .third {
+    background-color: var(--bright-background);
+}
+
+.first .cont-wrap, .second .cont-wrap, .third .cont-wrap {
     display: flex;
-    flex: 1;
-    flex-flow: column nowrap;
-    /* text-align: center; */
-     background-color: var(--bright-background);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card-container {
@@ -146,13 +152,17 @@ body {
     flex: 1;
 }
 
-.third {
-    background-color: var(--bright-background);
-    flex: 1;
+.bluebox {
+    background-color: var(--button);
+    padding: 12px;
+    margin: 24px;
+    border: var(--dark-background) solid;
+    border-radius: 16px;
 }
 
-.bluebox {
-    background-color: var(--button)
+.bluebox p, .bluebox h4 {
+    margin: 4px;
+    padding: 0;
 }
 
 .footer {
