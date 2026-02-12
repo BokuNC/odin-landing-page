@@ -108,6 +108,8 @@ button:active {
     flex: 1;
     height: 250px;
     background-color: #8cb4ed86;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .hero .img-container {
@@ -115,6 +117,14 @@ button:active {
     width: 500px;
     height: 250px;
     flex-basis: 500px;
+}
+
+.hero .img-container img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0px -36px;
 }
 
 .content {
@@ -160,6 +170,31 @@ button:active {
     border-radius: 10px;
 }
 
+.card-img1, .card-img2, .card-img3, .card-img4 {
+    width: 120%;
+    object-fit: cover;
+}
+
+.card-img1 {
+    object-position: center top;
+    margin: 0px -36px;
+}
+
+.card-img2 {
+    object-position: center top;
+    margin: 0px -36px;
+}
+
+.card-img3 {
+    object-position: center top;
+    margin: 0px -36px;    
+}
+
+.card-img4 {
+    object-position: center top;
+    margin: 0px -36px;    
+}
+
 .second {
     background-color: var(--med-background);
     flex: 1;
@@ -187,6 +222,7 @@ button:active {
     margin: 0;
     padding: 0px 12px;
     align-self: flex-end;
+    text-decoration: none;
 }
 
 .bluebox {
