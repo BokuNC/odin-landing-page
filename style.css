@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    --bright-background: #e9e7ff;
-    --med-background: #566b95;
+    --bright-background: #f9faf8;
+    --med-background: #e5e7eb;
     --dark-background: #1f2937;
     --main-text: #f9faf8;
     --sec-text: #e5e7eb;
     --button: #3882f6;
     --text: #1f2937;
     --max-width: 90rem;
-}
-
-body {
+    --mid-width: 60em;
     font-family: 'Roboto', 'Arial', sans-serif;
     margin: 0px;
 }
@@ -85,13 +85,19 @@ body {
     margin: 0px;
 }
 
-.hero button, .bluebox button {
+button {
     background-color: #3882f6;
     color: white;
-    font-size: 18px;
-    border-radius: 10px;
-    max-width: 130px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
     padding: 8px;
+    max-width: 130px;
+}
+
+button:active {
+    background-color: var(--dark-background);
 }
 
 .subtext {
@@ -127,6 +133,14 @@ body {
     justify-content: space-between;
 }
 
+.info {
+    flex: 1;
+    width: inherit;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
 .card-container {
     flex: 1;
     display: flex;
@@ -137,15 +151,13 @@ body {
     width: 250px;
     max-width: 280px;
     text-align: center;
-    border: var(--button) solid;
-    border-radius: 10px;
     padding: 8px;
     margin: 8px;
 }
 
-.card p {
-    flex: 1;
-    width: inherit;
+.card .img-container {
+    border: var(--button) solid;
+    border-radius: 10px;
 }
 
 .second {
@@ -153,17 +165,57 @@ body {
     flex: 1;
 }
 
+.second .cont-wrap {
+    gap: 12px;
+    padding: 32px;
+    max-width: var(--mid-width);
+}
+
+.testimonial {
+    color: var(--text);
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+
+.signed {
+    color: var(--text);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0px 12px;
+    align-self: flex-end;
+}
+
 .bluebox {
+    width: 100%;
     background-color: var(--button);
-    padding: 12px;
-    margin: 24px;
-    border: var(--dark-background) solid;
-    border-radius: 16px;
+    margin: 64px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-text);
+}
+
+.bluebox div, .bluebox button {
+    flex: 1;
+    margin: 48px 80px;
 }
 
 .bluebox p, .bluebox h4 {
     margin: 4px;
     padding: 0;
+}
+
+.bluebox h4 {
+    font-size: 1.2em;
+}
+
+.bluebox button {
+    border: white solid 2px;
+    margin: 55px;
 }
 
 .footer {
@@ -175,5 +227,5 @@ body {
 
 .footer p {
     margin: 0;
-    padding: 12px;
+    padding: 24px;
 }
