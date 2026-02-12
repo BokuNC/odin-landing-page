@@ -171,28 +171,31 @@ button:active {
 }
 
 .card-img1, .card-img2, .card-img3, .card-img4 {
-    width: 120%;
     object-fit: cover;
 }
 
 .card-img1 {
-    object-position: center top;
-    margin: 0px -36px;
+    width: 140%;
+    object-position: center;
+    margin: -50px -50px;
 }
 
 .card-img2 {
-    object-position: center top;
-    margin: 0px -36px;
+    width: 200%;
+    object-position: center center;
+    margin: -160px -120px;
 }
 
 .card-img3 {
+    width: 170%;
     object-position: center top;
-    margin: 0px -36px;    
+    margin: -200px -76px;    
 }
 
 .card-img4 {
-    object-position: center top;
-    margin: 0px -36px;    
+    width: 200%;
+    object-position: center center;
+    margin: -200px -100px;    
 }
 
 .second {
